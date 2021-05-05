@@ -38,7 +38,10 @@ public:
 	bool setAccuracy(SHTAccuracy newAccuracy);
 	
 	/**
-	 * @brief: Read data from SHT, update temp and humi.
+	 * @brief: Read data from SHT, update temp and humi. The function need time refer:
+	 * 			ACCURACY_HIGH    -> 15ms
+	 * 			ACCURACY_MEDIUM  -> 6ms
+	 * 			ACCURACY_LOW     -> 4ms
 	 * @return: false-update failed; true-update successfully.
 	 */
 	bool read();
